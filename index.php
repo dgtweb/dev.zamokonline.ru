@@ -1,3 +1,3 @@
 <?php
 
-echo 'test 222';
+echo 'vashzamok.ru';
