@@ -1,0 +1,29 @@
+.section-product {
+    margin: 15px 0 45px;
+}
+
+.section-product .product-header {
+    margin-bottom: 25px;
+}
+
+.section-product .product-title {
+    margin: 0;
+}
+
+.section-product .section-product-details {
+    margin: 35px 0 0;
+}
+
+@media (min-width: 1200px) {
+    .section-product {
+        margin: 20px 0 100px;
+    }
+
+    .section-product .product-header {
+        margin-bottom: 20px;
+    }
+
+    .section-product .section-product-details {
+        margin: 45px 0 0;
+    }
+}

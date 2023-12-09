@@ -1,0 +1,22 @@
+.product-description-block {
+    line-height: 1.6;
+}
+
+.product-description-block > * {
+    margin-bottom: 15px;
+}
+
+.product-description-block > :first-child {
+    margin-top: 0;
+}
+
+.product-description-block > :last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+    .product-description-block {
+        max-width: 830px;
+        line-height: 1.75;
+    }
+}

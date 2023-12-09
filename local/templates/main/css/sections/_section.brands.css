@@ -1,0 +1,95 @@
+.section-brands {
+    margin: 45px 0;
+    padding: 0;
+}
+
+.section-brands .section-cta {
+    margin: 22px 0;
+}
+
+
+.brands-grid {
+    margin-bottom: -40px;
+}
+
+.brands-grid .brand-item {
+    margin-bottom: 40px;
+}
+
+
+.swiper-brands {
+    margin: -30px -10px;
+    padding: 25px 10px 15px;
+}
+
+.swiper-brands .swiper-slide {
+    margin: 0 0 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.swiper-brands .swiper-brands-button-prev,
+.swiper-brands .swiper-brands-button-next {
+    height: 150px;
+}
+
+@media (min-width: 768px) {
+    .section-brands {
+        margin: 60px 0;
+        padding: 0;
+    }
+
+    .section-brands .section-cta {
+        margin: 30px 0;
+    }
+
+
+    .swiper-brands {
+        margin: -30px 30px;
+        padding: 25px 10px;
+    }
+
+    .swiper-brands .swiper-slide {
+        margin: 0;
+    }
+
+    .swiper-brands.swiper-container-initialized .swiper-slide {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 300ms linear,  visibility 300ms linear;
+    }
+
+    .swiper-brands.swiper-container-initialized .swiper-slide-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .swiper-brands .swiper-brands-button-prev {
+        transform: translateX(-50%);
+    }
+
+    .swiper-brands .swiper-brands-button-next {
+        transform: translateX(50%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-brands {
+        margin: 70px 0;
+        padding: 0;
+    }
+
+    .swiper-brands {
+        margin: -30px -15px;
+        padding: 25px 10px;
+    }
+
+    .swiper-brands .swiper-brands-button-prev {
+        transform: translateX(-130%);
+    }
+
+    .swiper-brands .swiper-brands-button-next {
+        transform: translateX(130%);
+    }
+}

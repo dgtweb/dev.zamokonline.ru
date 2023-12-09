@@ -1,0 +1,11 @@
+@media (max-width: 1199px) {
+    .card-product-compare-category {
+        padding: 15px 0;
+    }
+
+    .card-product-compare-category .card-product-title {
+        overflow: visible;
+        display: block;
+        height: auto;
+    }
+}

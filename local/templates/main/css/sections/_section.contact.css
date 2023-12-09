@@ -1,0 +1,38 @@
+.section-contact {
+    margin: 25px 0 0;
+    padding: 0;
+}
+
+
+#map {
+    overflow: hidden;
+    width: 100%;
+    height: 375px;
+    background-color: #fafafb;
+}
+
+#map img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+@media (min-width: 768px) {
+    .section-contact {
+        margin: 65px 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-contact {
+        margin: 70px 0 0;
+        padding: 0;
+    }
+
+    #map {
+        height: 545px;
+    }
+}

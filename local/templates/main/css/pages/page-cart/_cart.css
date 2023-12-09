@@ -1,0 +1,14 @@
+.section-cart {
+    margin: 15px 0 90px;
+}
+
+.section-cart .display-header {
+    margin-bottom: 30px;
+}
+
+
+@media (min-width: 1200px) {
+    .section-cart {
+        margin: 35px 0 170px;
+    }
+}

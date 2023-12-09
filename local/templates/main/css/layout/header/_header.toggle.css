@@ -1,0 +1,18 @@
+.header-toggle {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .header-toggle {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,59 @@
+/* Переопределение стилей в верстке */
+
+@media (min-width: 1200px) {
+    .admin-panel {
+        display: block !important;
+    }
+}
+
+/* Логотип в мобильном меню */
+.header-logo-block-mobile-menu {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+
+/* контакты в шапке десктоп */
+
+@media (min-width: 1200px)
+{
+    .header-contact-container {
+         max-width: none !important;
+    }
+}
+.header-address-item {
+    /*width: 500px !important;*/
+}
+
+/* Контакты в в мобильном меню */
+.offcanvas-contact-block {
+    display: flex;
+}
+
+.offcanvas-contact-content {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.offcanvas-contact-content div {
+    margin-right: 7px;
+
+    line-height: 26px;
+}
+
+.offcanvas-contact-content div.offcanvas-contact-tel {
+    font-size: 22px;
+}
+
+.offcanvas-contact-content div.offcanvas-contact-icon-whatsapp {
+    margin-top: -3px;
+    position: relative;
+}
+
+.offcanvas-contact-content svg.offcanvas-contact-whatsapp-link {
+    width: 24px;
+    height: 24px;
+
+}

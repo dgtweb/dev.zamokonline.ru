@@ -1,0 +1,56 @@
+.header-contact-container {
+    transition: transform .15s linear;
+}
+
+.header-contact-container.hide {
+    transform: scale(0);
+}
+
+
+.header-contact-list {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.header-contact-list .header-contact-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+
+.header-contact-block {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.header-contact-block a {
+    color: inherit;
+}
+
+.header-contact-block a[href^="tel:"] {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.header-contact-block .header-contact-thumbnail {
+    flex: 0 0 14px;
+    width: 14px;
+    max-width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.header-contact-block .header-contact-thumbnail .header-contact-media {
+    fill: #ffda3f;
+}
+
+.header-contact-block .header-contact-thumbnail .header-contact-metro-media {
+    fill: #e54444;
+}
+
+.header-contact-block .header-contact-whatsapp-link {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: text-top;
+}

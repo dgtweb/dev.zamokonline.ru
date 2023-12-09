@@ -1,0 +1,23 @@
+.swiper-product-reviews {
+    margin: -15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.swiper-product-reviews .swiper-wrapper {
+    margin: 0;
+}
+
+.product-review-add-block {
+    margin: 25px 0 0;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .product-review-add-block {
+        margin: 40px 0 0;
+    }
+}

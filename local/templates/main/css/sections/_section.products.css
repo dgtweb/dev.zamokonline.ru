@@ -1,0 +1,30 @@
+.section-products {
+    margin: 45px 0 90px;
+}
+
+.swiper-products {
+    margin: -25px -5px;
+    padding: 25px 0;
+}
+
+.swiper-products .swiper-wrapper {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .swiper-products {
+        margin: -25px;
+        padding: 25px 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-products {
+        margin: 100px 0 140px;
+    }
+
+    .swiper-products {
+        margin: -25px;
+        padding: 25px 10px;
+    }
+}

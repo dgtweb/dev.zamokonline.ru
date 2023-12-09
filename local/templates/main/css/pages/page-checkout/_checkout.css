@@ -1,0 +1,17 @@
+.section-checkout {
+    margin: 15px 0 85px;
+}
+
+.section-checkout .display-header {
+    margin-bottom: 28px;
+}
+
+@media (min-width: 1200px) {
+    .section-checkout {
+        margin: 35px 0 180px;
+    }
+
+    .section-checkout .display-header {
+        margin-bottom: 38px;
+    }
+}

@@ -1,0 +1,27 @@
+.product-trade-container {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.product-trade-block {
+    padding: 25px 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px rgba(164, 164, 164, 0.3);
+}
+
+@media (min-width: 768px) {
+    .product-trade-block {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-trade-container {
+        margin-top: 38px;
+        margin-bottom: 38px;
+    }
+
+    .product-trade-block {
+        padding: 30px 25px 40px;
+    }
+}

@@ -1,0 +1,11 @@
+Satisfy Any
+Order deny,allow
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Если файл существует пропускаем обработку запроса
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  RewriteRule ^ index.php [QSA,L]
+</IfModule>

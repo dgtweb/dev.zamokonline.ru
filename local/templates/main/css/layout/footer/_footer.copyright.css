@@ -1,0 +1,17 @@
+.footer-copyright-wrapper {
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding: 25px 0 30px;
+}
+
+.footer-copyright-block {
+    color: #bcbcbc;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+}
+
+@media (min-width: 1200px) {
+    .footer-copyright-wrapper {
+        padding: 25px 0;
+    }
+}

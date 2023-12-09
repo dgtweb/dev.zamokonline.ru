@@ -1,0 +1,15 @@
+.product-summary-container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.product-summary-block .product-summary-title {
+    margin: 0 0 20px;
+}
+
+@media (min-width: 1200px) {
+    .product-summary-container {
+        margin-top: 38px;
+        margin-bottom: 38px;
+    }
+}

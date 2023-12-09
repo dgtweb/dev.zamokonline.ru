@@ -1,0 +1,19 @@
+.form-product-online .form-group {
+    margin-bottom: 15px;
+}
+
+.form-product-online .form-message-block {
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+
+@media (min-width: 1200px) {
+    .form-product-online .form-group,
+    .form-product-online .form-message-block {
+        margin-bottom: 35px;
+    }
+
+    .form-product-online .form-message-block {
+        line-height: normal;
+    }
+}

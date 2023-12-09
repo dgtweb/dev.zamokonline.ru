@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="27px" viewBox="0 0 16 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-lock" transform="translate(1.000000, 0.000000)" stroke="#333333" stroke-width="0.992125984">
+            <path d="M8.35,26.05 L6.15,26.05 C2.99093123,26.05 0.43,23.4890688 0.43,20.33 L0.53,12.92 L14.18,12.92 L14.07,20.33 C14.07,23.4890688 11.5090688,26.05 8.35,26.05 Z" id="Shape" fill="#FFDA3F" fill-rule="nonzero"></path>
+            <path d="M6.57,0.54 L8.11,0.54 C10.319139,0.54 12.11,2.330861 12.11,4.54 L12,12.92 L2.53,12.92 L2.6,4.51 C2.61633271,2.32423052 4.38423052,0.556332708 6.57,0.54 Z" id="Shape"></path>
+            <path d="M8.63,16.79 C8.60215022,16.1388012 8.12247682,15.5958814 7.47967294,15.4879988 C6.83686906,15.3801162 6.20623227,15.7366912 5.96731356,16.3431179 C5.72839485,16.9495446 5.9463492,17.6404457 6.49,18 L6.49,20 C6.49,20.4197364 6.83026359,20.76 7.25,20.76 C7.66582598,20.7545281 8.000036,20.415862 8,20 L8,18 C8.40709071,17.7345375 8.64597153,17.2757346 8.63,16.79 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

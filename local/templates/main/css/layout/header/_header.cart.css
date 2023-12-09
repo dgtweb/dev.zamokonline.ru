@@ -1,0 +1,124 @@
+.header-cart-dropdown {
+    width: 325px;
+}
+
+.header-cart-dropdown::before {
+    left: auto;
+    right: 50px;
+}
+
+
+.header-cart-list .header-cart-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(51, 51, 51, .06);
+}
+
+
+.card-header-order {
+    position: relative;
+}
+
+.card-header-order .card-header-order-thumbnail-container {
+    flex: 0 0 120px;
+    width: 120px;
+    max-width: 120px;
+}
+
+.card-header-order .card-header-order-content-container {
+    padding-right: 40px !important;
+}
+
+.card-header-order .card-header-order-delete {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    line-height: 42px;
+    text-align: center;
+}
+
+.card-header-order .card-header-order-delete svg {
+    opacity: 0.22;
+    fill: currentColor;
+    transition: opacity 300ms ease;
+}
+
+.card-header-order .card-header-order-delete:hover svg {
+    opacity: 1;
+}
+
+
+.card-header-order .card-header-order-thumbnail {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 90px;
+    text-decoration: none;
+}
+
+.card-header-order .card-header-order-thumbnail:hover {
+    text-decoration: none;
+}
+
+.card-header-order .card-header-order-thumbnail .card-header-order-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.card-header-order .card-header-order-title {
+    opacity: 0.9;
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.card-header-order .card-header-order-title:hover {
+    opacity: 1;
+}
+
+.card-header-order .card-header-order-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-header-order .card-header-order-title a:hover {
+    color: rgba(51, 51, 51, .6);
+}
+
+.card-header-order .card-header-order-price {
+    opacity: 0.9;
+    font-size: 22px;
+}
+
+.card-header-order .card-header-order-price span {
+    font-size: 15px;
+}
+
+
+.header-cart-footer {
+    padding: 15px 20px 30px;
+}
+
+.header-cart-total-block .header-cart-total-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.header-cart-total-block .header-cart-total {
+    opacity: 0.9;
+    margin: 0;
+    font-size: 20px;
+}

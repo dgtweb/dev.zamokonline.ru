@@ -1,0 +1,82 @@
+.card-banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 10px;
+    text-decoration: none;
+}
+
+.card-banner:hover {
+    text-decoration: none;
+}
+
+.card-banner .card-banner-inner {
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(164, 164, 164, 0.4);
+}
+
+
+.card-banner .card-banner-typography-container {
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card-banner .card-banner-title {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: normal;
+}
+
+.card-banner .card-banner-description {
+    margin: 10px 0 0;
+}
+
+.card-banner .card-banner-thumbnail {
+    margin: 0;
+}
+
+.card-banner .card-banner-media {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: right center;
+    object-position: right center;
+}
+
+@media (min-width: 768px) {
+    .card-banner .card-banner-media {
+        -o-object-position: center;
+        object-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-banner {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .card-banner .card-banner-typography-container {
+        padding-left: 40px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .card-banner .card-banner-title {
+        margin: 0 0 8px;
+        font-size: 21px;
+        line-height: normal;
+    }
+
+    .card-banner .card-banner-description {
+        margin: 0;
+    }
+}

@@ -1,0 +1,32 @@
+.compare-controls-list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.compare-control {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 16px;
+    color: currentColor;
+    text-decoration: none;
+}
+
+.compare-control .compare-control-thumbnail {
+    flex: 0 0 20px;
+    width: 20px;
+    max-width: 20px;
+    margin: 0 10px 0 0;
+}
+
+.compare-control .compare-control-media {
+    fill: currentColor;
+}
+
+.compare-control:hover {
+    color: #ffda3f;
+    text-decoration: none;
+}

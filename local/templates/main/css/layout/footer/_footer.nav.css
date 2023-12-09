@@ -1,0 +1,25 @@
+.footer-nav-list {
+    margin: -5px 0;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    line-height: normal;
+}
+
+.footer-nav-list .footer-nav-item {
+    margin: 5px 0;
+}
+
+.footer-nav-list .footer-nav-link {
+    display: block;
+    padding: 3px 0;
+}
+
+@media (min-width: 1200px) {
+    .footer-nav-list {
+        font-size: initial;
+    }
+
+    .footer-nav-list .footer-nav-link  {
+        padding: 5px 0;
+    }
+}

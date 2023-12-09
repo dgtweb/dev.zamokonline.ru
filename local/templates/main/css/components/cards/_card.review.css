@@ -1,0 +1,98 @@
+.card-review {
+    padding: 25px 35px 15px 25px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(164, 164, 164, 0.3);
+    color: rgba(51, 51, 51, 0.9);
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.card-review .card-review-header {
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+.card-review .card-review-name {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+.card-review .card-review-date {
+    margin: 0 0 8px;
+    color: rgba(51, 51, 51, 0.6);
+}
+
+.card-review .card-review-rating {
+    color: #ffda3f;
+}
+
+
+.card-review-comments-list {
+    margin: 0;
+}
+
+.card-review-comments-list .card-review-comment-item {
+    position: relative;
+}
+
+.card-review-comments-list .card-review-comment-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.card-review-comment-label {
+    margin: 0 0 5px;
+    font-weight: 500;
+}
+
+.card-review-positive-comment-label::before,
+.card-review-negative-comment-label::before {
+    display: inline-block;
+    vertical-align: baseline;
+    flex: 0 0 20px;
+    width: 20px;
+    max-width: 20px;
+    font-family: 'icomoon';
+    font-size: 13px;
+}
+
+.card-review-positive-comment-label::before {
+    color: #35cd00;
+    content: '\e90b';
+}
+
+.card-review-negative-comment-label::before {
+    color: #e54444;
+    content: '\e90c';
+}
+
+@media (min-width: 1200px) {
+    .card-review {
+        padding: 30px 30px 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card-review .card-review-name {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .card-review .card-review-date {
+        margin: 0;
+    }
+
+
+    .card-review-comments-list .card-review-comment-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .card-review-positive-comment-label::before,
+    .card-review-negative-comment-label::before {
+        flex: 0 0 24px;
+        width: 24px;
+        max-width: 24px;
+        font-size: 16px;
+    }
+}

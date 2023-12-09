@@ -1,0 +1,154 @@
+#modalAddToCart .modal-content {
+    padding: 0;
+}
+
+#modalAddToCart .modal-header,
+#modalAddToCart .modal-body,
+#modalAddToCart .modal-footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#modalAddToCart .modal-header {
+    margin-bottom: 25px;
+}
+
+#modalAddToCart .modal-body {
+    border-top: 1px solid rgba(51, 51, 51, .06);
+    border-bottom: 1px solid rgba(51, 51, 51, .06);
+}
+
+#modalAddToCart .modal-footer {
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+
+.card-modal-order {
+    margin: 20px 0;
+    color: rgba(51, 51, 51, .9);
+    font-size: 12px;
+    line-height: normal;
+}
+
+.card-modal-order-thumbnail {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 0 100%;
+    text-decoration: none;
+}
+
+.card-modal-order-thumbnail .card-modal-order-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+
+.card-modal-order-title {
+    margin: 5px 0 20px;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.card-modal-order-title a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-modal-order-title a:hover {
+    color: rgba(51, 51, 51, .6);
+    text-decoration: none;
+}
+
+.card-modal-order-subtitle {
+    margin: 0 0 10px;
+}
+
+
+.card-modal-order-message-block {
+    margin: 0 -20px 20px;
+    padding: 16px 25px;
+    background-color: #fcfcfc;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(51, 51, 51, .8);
+}
+
+.card-modal-order-quantity-control {
+    width: 80px;
+}
+
+
+.card-modal-order-price {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.card-modal-order-price span {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    #modalAddToCart .modal-dialog {
+        max-width: 480px;
+        margin: 25px auto;
+    }
+
+    /* #modalAddToCart .modal-content {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    } */
+
+    #modalAddToCart .modal-header,
+    #modalAddToCart .modal-body,
+    #modalAddToCart .modal-footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #modalAddToCart .modal-header {
+        margin: 0;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    #modalAddToCart .modal-header .modal-title {
+        margin: 0;
+    }
+
+
+    .card-modal-order {
+        margin: 20px 0 35px;
+        font-size: 15px;
+    }
+
+    .card-modal-order-title {
+        margin: 0 0 20px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .card-modal-order-subtitle {
+        margin: 0 0 15px;
+    }
+
+    .card-modal-order-message-block {
+        margin: 5px 0 25px -25px;
+        padding: 15px 20px 15px 25px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .card-modal-order-price {
+        font-size: 23px;
+        line-height: 40px;
+    }
+}

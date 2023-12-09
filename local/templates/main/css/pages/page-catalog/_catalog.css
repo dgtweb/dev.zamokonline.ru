@@ -1,0 +1,11 @@
+.section-catalog {
+    margin: 15px 0 30px;
+    padding: 0;
+}
+
+@media (min-width: 1200px) {
+    .section-catalog {
+        margin: 35px 0 170px;
+        padding: 0;
+    }
+}

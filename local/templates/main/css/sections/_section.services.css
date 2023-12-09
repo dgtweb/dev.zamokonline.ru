@@ -1,0 +1,32 @@
+.section-services {
+    margin: 45px 0;
+    padding: 0;
+}
+
+.services-grid {
+    margin-bottom: -15px;
+}
+
+.services-grid .service-item {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .section-services {
+        margin: 60px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-services {
+        margin: 70px 0;
+    }
+
+    .services-grid {
+        margin-bottom: -30px;
+    }
+
+    .services-grid .service-item {
+        margin-bottom: 30px;
+    }
+}

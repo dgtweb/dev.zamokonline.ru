@@ -1,0 +1,23 @@
+#modalAddReview .modal-dialog {
+    max-width: 100%;
+}
+
+#modalAddReview .modal-header, 
+#modalAddReview .modal-body, 
+#modalAddReview .modal-footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    #modalAddReview .modal-dialog {
+        max-width: 505px;
+    }
+
+    #modalAddReview .modal-header, 
+    #modalAddReview .modal-body, 
+    #modalAddReview .modal-footer {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}

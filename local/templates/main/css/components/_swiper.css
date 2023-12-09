@@ -1,0 +1,128 @@
+.swiper-cover {
+    position: relative;
+}
+
+.swiper-cover > .swiper-container {
+    position: static;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 45px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    fill: #484848;
+}
+
+.swiper-button-prev {
+    left: 0;
+    transform: translateX(calc(-100% + 10px));
+}
+
+.swiper-button-next {
+    right: 0;
+    transform: translateX(calc(100% - 10px));
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(164, 164, 164, 0.45);
+    transform: translateY(-50%);
+    content: '';
+}
+
+
+.swiper-long-arrow-button-prev,
+.swiper-long-arrow-button-next {
+    cursor: pointer;
+    width: 60px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    fill: #c9c9c9;
+    transition: color 300ms ease;
+}
+
+.swiper-long-arrow-button-prev:hover,
+.swiper-long-arrow-button-next:hover {
+    fill: currentColor;
+}
+
+
+.swiper-button-xl::after {
+    display: none;
+}
+
+.swiper-button-prev.swiper-button-xl::after {
+    text-shadow: 2px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.swiper-button-next.swiper-button-xl::after {
+    text-shadow: -2px 0px 0px rgba(255, 255, 255, 1);
+}
+
+
+.swiper-pagination-wrapper {
+    margin: 20px 0 0;
+}
+
+.swiper-pagination {
+    position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: 7px;
+    height: 7px;
+    background-color: #e2e2e2;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffda3f;
+}
+
+
+.swiper-pagination-fraction {
+    width: auto;
+    bottom: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.swiper-pagination-fraction .swiper-pagination-total {
+    color: #c9c9c9;
+}
+
+@media (min-width: 768px) {
+    .swiper-button-xl::after {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .swiper-button-prev {
+        transform: translateX(calc(-100% - 15px));
+    }
+
+    .swiper-button-next {
+        transform: translateX(calc(100% + 15px));
+    }
+}

@@ -1,0 +1,54 @@
+.exDebugClass {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100000;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    padding: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    height: 50%;
+    min-height: 150px;
+    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    border-top: 20px rgba(0, 0, 0, 8) solid;
+    border-bottom: 3px rgba(0, 0, 0, 0.9) solid;
+    border-radius: 7px;
+    -webkit-backdrop-filter: saturate(50%) blur(8px);
+    backdrop-filter: saturate(50%) blur(8px);
+    -webkit-box-shadow: -1px 10px 23px 3px rgba(34, 60, 80, 0.36);
+    -moz-box-shadow: -1px 10px 23px 3px rgba(34, 60, 80, 0.36);
+    box-shadow: -1px 10px 23px 3px rgba(34, 60, 80, 0.36);
+
+}
+
+.exDebugClass::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+.exDebugClass::-webkit-scrollbar-thumb {
+    background: #5C5C5C;
+    border-radius: 30px;
+}
+
+.exDebugClass::-webkit-scrollbar-thumb:hover {
+    background: #706E70;
+}
+
+.exDebugClass::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+.exDebugClass::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+}
+
+.exDebugClass pre {
+    color: #FFCC84FF;
+}

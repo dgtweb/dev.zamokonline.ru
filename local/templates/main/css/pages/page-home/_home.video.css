@@ -1,0 +1,9 @@
+.section-home-video .video-grid .video-item:nth-child(3n) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .section-home-video .video-grid .video-item:nth-child(3n) {
+        display: block;
+    }
+}

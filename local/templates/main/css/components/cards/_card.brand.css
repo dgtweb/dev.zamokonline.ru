@@ -1,0 +1,67 @@
+.card-brand {
+    display: block;
+    width: 100%;
+    color: rgba(51, 51, 51, 0.9);
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.card-brand .card-brand-figure {
+    margin: 0;
+}
+
+.card-brand .card-brand-thumbnail {
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0 0 52%;
+    border: 1px solid transparent;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(164, 164, 164, 0.25);
+    transition: box-shadow 300ms ease;
+}
+
+.card-brand .card-brand-thumbnail .card-brand-media {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    max-width: calc(100% - 30px);
+    max-height: calc(100% - 30px);
+    margin: auto;
+}
+
+.card-brand .card-brand-title {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.card-brand:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-brand:hover .card-brand-thumbnail {
+    border-color: #ffda3f;
+    box-shadow: 0 0 25px rgba(204, 204, 204, 0.5);
+}
+
+@media (min-width: 768px) {
+    .card-brand {
+        font-size: 14px;
+    }
+
+    .card-brand .card-brand-thumbnail {
+        padding: 0 0 85px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-brand {
+        font-size: 16px;
+    }
+}

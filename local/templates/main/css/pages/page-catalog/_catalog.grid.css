@@ -1,0 +1,42 @@
+.catalog-grid {
+    margin-bottom: 10px;
+}
+
+.catalog-grid .catalog-item {
+    margin-bottom: 10px;
+}
+
+
+.catalog-show-more-button {
+    cursor: pointer;
+    width: 100%;
+    margin: 12px 0 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: rgba(51, 51, 51, .9);
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+}
+
+.catalog-show-more-button:hover {
+    color: #ffda3f;
+}
+
+.catalog-show-more-button .catalog-show-more-icon {
+    margin-right: 15px;
+    fill: #ffda3f;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .catalog-grid {
+        margin-bottom: 5px;
+    }
+
+    .catalog-grid .catalog-item {
+        margin-bottom: 30px;
+    }
+}

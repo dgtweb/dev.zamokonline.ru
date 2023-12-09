@@ -1,0 +1,32 @@
+.product-actions {
+    position: absolute;
+    z-index: 9;
+    top: -5px;
+    right: 5px;
+}
+
+.product-actions .product-action {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    line-height: 38px;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .product-actions {
+        top: 30px;
+        right: 20px;
+    }
+
+    .product-actions .product-action {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+    }
+}

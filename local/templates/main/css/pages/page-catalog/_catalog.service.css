@@ -1,0 +1,79 @@
+.card-catalog-service {
+    position: relative;
+    width: 100%;
+    border: 3px solid #ffda3f;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(164, 164, 164, 0.25);
+    color: rgba(51, 51, 51, .9);
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.card-catalog-service-content {
+    padding: 15px 10px 15px;
+}
+
+.card-catalog-service-thumbnail {
+    position: relative;
+    padding: 0 0 91.5%;
+}
+
+.card-catalog-service-thumbnail .card-catalog-service-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card-catalog-service-title,
+.card-catalog-service-description {
+    margin: 0 0 12px;
+}
+
+.card-catalog-service-title {
+    color: rgba(51, 51, 51, .9);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.card-catalog-service-cta {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+    .card-catalog-service {
+        border-width: 10px;
+        color: rgba(51, 51, 51, .8);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .card-catalog-service-content {
+        padding: 20px 15px 15px;
+    }
+
+
+    .card-catalog-service-thumbnail {
+        padding: 0 0 102.5%;
+    }
+
+    .card-catalog-service-title,
+    .card-catalog-service-description {
+        margin: 0 0 18px;
+    }
+
+    .card-catalog-service-title {
+        color: rgba(51, 51, 51, .9);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+}

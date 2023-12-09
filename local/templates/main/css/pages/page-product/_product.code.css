@@ -1,0 +1,10 @@
+.product-code-block {
+    margin: 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(51, 51, 51, .6);
+}
+
+.product-code-block .product-code {
+    color: rgba(51, 51, 51, .9);
+}

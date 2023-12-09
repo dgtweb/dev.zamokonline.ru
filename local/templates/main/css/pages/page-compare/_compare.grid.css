@@ -1,0 +1,25 @@
+.compare-grid .compare-column-header {
+    /* min-height: 450px; */
+    margin: 0 0 45px;
+}
+
+
+.compare-grid .compare-specifications-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(51, 51, 51, .9);
+    letter-spacing: -0.4px;
+}
+
+.compare-grid .compare-specifications-list .compare-specification-item {
+    padding: 15px 15px;
+    border-bottom: 1px solid rgba(51, 51, 51, .06);
+}
+
+.compare-grid .compare-specifications-list .compare-specification-item:first-child {
+    border-top: 1px solid rgba(51, 51, 51, .06);
+}
+
+.compare-grid .compare-specifications-list .compare-specification-name {
+    color: rgba(51, 51, 51, .6);
+}

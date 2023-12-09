@@ -1,0 +1,63 @@
+.megamenu-wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 30px 35px;
+    background-color: #fff;
+    box-shadow: 0 2px 12px #d2d2d2;
+}
+
+.megamenu-heading {
+    opacity: 0.9;
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+
+.megamenu-nav {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.megamenu-nav .megamenu-nav-item {
+    margin: 0;
+}
+
+.megamenu-nav .megamenu-nav-link {
+    min-height: 36px;
+    padding: 3px 0;
+    color: currentColor;
+    text-decoration: none;
+}
+
+.megamenu-nav .megamenu-nav-link .megamenu-nav-thumbnail {
+    flex: 0 0 20px;
+    width: 20px;
+    max-width: 20px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.megamenu-nav .megamenu-nav-link .megamenu-nav-content {
+    opacity: 0.8;
+    transition: opacity 300ms ease;
+}
+
+
+.megamenu-nav .megamenu-nav-link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.megamenu-nav .megamenu-nav-link:hover .megamenu-nav-content {
+    opacity: 1;
+}
+
+
+.megamenu-nav .megamenu-nav-link-more {
+    color: #0072f9;
+}

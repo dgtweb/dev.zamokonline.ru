@@ -1,0 +1,205 @@
+.product-gallery-container {
+    margin-bottom: 28px;
+}
+
+/* product media */
+.product-gallery-block {
+    position: relative;
+    margin: 0 0 40px;
+}
+
+.product-gallery {
+    cursor: zoom-in;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0 0 165px;
+    text-decoration: none;
+}
+
+.product-gallery:hover {
+    text-decoration: none;
+}
+
+
+.product-gallery .product-gallery-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+/* product media end */
+
+
+/* product thumnbails */
+.product-thumnbail {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.product-thumnbail .product-thumnbail-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+
+.swiper-product-thumbnails {
+    /* margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.swiper-product-thumbnails::before,
+.swiper-product-thumbnails::after {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    width: 25px;
+    height: 100%;
+    content: '';
+}
+
+.swiper-product-thumbnails::before {
+    left: 0;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.swiper-product-thumbnails::after {
+    right: 0;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.swiper-product-thumbnails .swiper-slide {
+    width: 55px;
+    height: 55px;
+    margin: 0 10px 0 0;
+    border: 1px solid #e9e9e9;
+}
+
+.swiper-product-thumbnails .swiper-slide-thumb-active {
+    border-color: #ffda3f;
+}
+
+.swiper-product-thumbnails .swiper-button-prev,
+.swiper-product-thumbnails .swiper-button-next {
+    width: 55px;
+    height: 35px;
+    left: 0;
+    fill: rgba( 51, 51, 51, .8);
+}
+
+.swiper-product-thumbnails .swiper-button-prev:hover,
+.swiper-product-thumbnails .swiper-button-next:hover {
+    fill: rgba( 51, 51, 51, 1);
+}
+
+.swiper-product-thumbnails .swiper-button-prev {
+    top: 0;
+    bottom: auto;
+    transform: translate(0, -100%);
+}
+
+.swiper-product-thumbnails .swiper-button-next {
+    top: auto;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+
+.swiper-product-thumbnails .swiper-button-prev::after,
+.swiper-product-thumbnails .swiper-button-next::after {
+    display: none;
+}
+/* product-thumnbails end */
+
+@media (min-width: 768px) {
+    .product-gallery {
+        padding: 0 0 225px;
+    }
+
+    .swiper-product-thumbnails {
+        height: 185px;
+        margin: 20px 0;
+    }
+
+    .swiper-product-thumbnails::before,
+    .swiper-product-thumbnails::after {
+        display: none;
+    }
+
+    .swiper-product-thumbnails .swiper-slide {
+        width: 55px;
+        height: 55px;
+        margin: 0 0 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .product-gallery {
+        padding: 0 0 205px;
+    }
+    
+    .swiper-product-thumbnails {
+        height: 170px;
+    }
+
+    .swiper-product-thumbnails .swiper-slide {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-gallery-container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .product-gallery-block {
+        margin: 0;
+    }
+
+    .product-gallery {
+        padding: 0 0 85.5%;
+    }
+
+
+    .swiper-product-thumbnails {
+        height: 250px;
+        margin: 40px 0;
+        padding: 0;
+    }
+
+    .swiper-product-thumbnails .swiper-slide {
+        width: 55px;
+        height: 55px;
+    }
+
+    .swiper-product-thumbnails .swiper-button-prev,
+    .swiper-product-thumbnails .swiper-button-next {
+        width: 55px;
+        height: 45px;
+    }
+}

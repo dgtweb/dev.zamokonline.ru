@@ -1,0 +1,35 @@
+.header-statusbar-wrapper {
+    background-color: #333333;
+    color: #fff;
+    font-size: 15px;
+}
+
+.header-statusbar-nav {
+    margin: 0 -15px;
+    line-height: 1;
+}
+
+.header-statusbar-nav .nav-link {
+    margin: 0;
+    padding: 15px;
+    color: inherit;
+    text-decoration: none;
+    transition: background 300ms ease;
+}
+
+.header-statusbar-nav .nav-link .nav-thumbnail {
+    max-width: 18px;
+    max-height: 18px;
+    margin-right: 9px;
+}
+
+.header-statusbar-nav .nav-link .nav-media {
+    max-width: inherit;
+    max-height: inherit;
+    fill: currentColor;
+}
+
+.header-statusbar-nav .nav-link:hover {
+    background-color: #232323;
+    color: #ffda3f;
+}

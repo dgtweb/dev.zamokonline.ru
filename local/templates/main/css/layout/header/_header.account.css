@@ -1,0 +1,170 @@
+.header-account-list {
+    margin: 0 -6px;
+}
+
+.header-account-list .header-account-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.header-account-link {
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 0 6px;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: currentColor;
+    fill: currentColor;
+    font-size: 12px;
+    letter-spacing: -0.6px;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: color 300ms ease;
+}
+
+.header-account-link .header-account-thumbnail {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    color: inherit;
+    fill: inherit;
+}
+
+.header-account-link .header-account-media {
+    color: inherit;
+    fill: inherit;
+    transition: fill 300ms ease;
+}
+
+
+.header-account-list .header-account-item:hover .header-account-link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+
+.header-account-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(30%, -40%);
+    display: inline-block;
+    min-width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0 3px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: #f30000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+.header-account-dropdown {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(204, 204, 204, 0.5);
+}
+
+.header-account-dropdown::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    content: '';
+}
+
+
+
+.header-account-dropdown {
+    opacity: 0.9;
+    margin: 0 0 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media (min-width: 576px) {
+    .header-account-list {
+        margin: 0 -12px;
+    }
+
+    .header-account-link {
+        padding: 0 12px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-account-list {
+        margin: 0 -20px;
+    }
+
+    .header-account-link {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .header-account-link .header-account-thumbnail {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .header-account-dropdown {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        top: calc(100% + 30px);
+        left: 50%;
+        transform: translate(-50%, 40px);
+        transition: transform 300ms ease;
+    }
+    
+    .header-account-dropdown.header-cart-dropdown {
+        left: auto;
+        right: -20px;
+        transform: translate(0, 40px);
+    }
+
+
+    /* hover */
+    .header-account-list .header-account-item:hover .header-account-link,
+    .header-account-list .header-account-item.is-hover .header-account-link  {
+        color: #ffda3f;
+        fill: #ffda3f;
+    }
+
+
+    .header-account-list .header-account-item:hover .header-account-dropdown,
+    .header-account-list .header-account-item.is-hover .header-account-dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+    }
+
+    .header-account-list .header-account-item:hover .header-account-dropdown.header-cart-dropdown,
+    .header-account-list .header-account-item.is-hover .header-account-dropdown.header-cart-dropdown {
+        transform: translate(0);
+    }
+}

@@ -1,0 +1,41 @@
+.badge {
+    padding: 5px 9px;
+    border-radius: 30px;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.badge-danger {
+    background: #e54444;
+    color: #fff;
+}
+
+.badge-status {
+    position: relative;
+}
+
+.badge-status::before {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px 0 0;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: middle;
+    content: '';
+}
+
+@media (min-width: 1200px) {
+    .badge {
+        padding: 5px 11px;
+        font-size: 12px;
+    }
+
+    .badge-status::before {
+        width: 5px;
+        height: 5px;
+        margin: 0 5px 0 0;
+    }
+}
