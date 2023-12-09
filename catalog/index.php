@@ -21,9 +21,8 @@ $APPLICATION->SetTitle("Каталог");
     $APPLICATION->ShowProperty('sectionClass', 'page'); ?>">
         <div class="container">
             <?
-           // $cmp =$_GET['clear_cache']?"uisoft:catalog":"bitrix:catalog";
-            $APPLICATION->IncludeComponent(
-                $cmp?:"uisoft:catalog",
+           $APPLICATION->IncludeComponent(
+               "uisoft:catalog",
 	".default",
 	array(
 		"IBLOCK_TYPE" => "catalog",
