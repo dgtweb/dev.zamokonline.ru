@@ -20,8 +20,7 @@ $APPLICATION->SetTitle("Каталог");
     <section class="<?
     $APPLICATION->ShowProperty('sectionClass', 'page'); ?>">
         <div class="container">
-            <?
-           $APPLICATION->IncludeComponent(
+            <?           $APPLICATION->IncludeComponent(
                "uisoft:catalog",
 	".default",
 	array(
