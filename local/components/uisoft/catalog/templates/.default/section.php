@@ -133,7 +133,7 @@ $GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $arResult["VARIABLES"]["SECTION_ID"];
                             // Имя входящего массива для дополнительной фильтрации элементов
                             'PREFILTER_NAME' => 'smartPreFilter',
                             // Тип цены
-                            'PRICE_CODE' => ['BASE'],
+                            "PRICE_CODE" => $arParams["PRICE_CODE"],
                             // Сохранять установки фильтра в сессии пользователя
                             'SAVE_IN_SESSION' => 'N',
                             // Код раздела

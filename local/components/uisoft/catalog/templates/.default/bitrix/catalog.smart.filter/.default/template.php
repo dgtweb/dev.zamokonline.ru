@@ -66,14 +66,13 @@ $this->setFrameMode(true);
                 <?
                 foreach ($arResult["ITEMS"] as $key => $arItem)//prices
                 {
+
                     $key = $arItem["ENCODED_ID"];
                     if (isset($arItem["PRICE"])):
-
                         // Фильтр по цене не будет отображаться если все цены одинаковые
                         if ($arItem["VALUES"]["MAX"]["VALUE"] - $arItem["VALUES"]["MIN"]["VALUE"] <= 0) {
                             continue;
                         }
-
                         $step_num = 4;
                         $step = ($arItem["VALUES"]["MAX"]["VALUE"] - $arItem["VALUES"]["MIN"]["VALUE"]) / $step_num;
                         $prices = array();
@@ -97,6 +96,7 @@ $this->setFrameMode(true);
                             }
                             $prices[$step_num] = number_format($arItem["VALUES"]["MAX"]["VALUE"], $precision, ".", "");
                         }
+
                         ?>
                         <div class="<?
                         if ($arParams["FILTER_VIEW_MODE"]
@@ -125,7 +125,7 @@ $this->setFrameMode(true);
                                                     id="<?
                                                     echo $arItem["VALUES"]["MIN"]["CONTROL_ID"] ?>"
                                                     value="<?
-                                                    echo $arItem["VALUES"]["MIN"]["HTML_VALUE"] ?>"
+                                                    echo !empty($arItem["VALUES"]["MIN"]["HTML_VALUE"])?$arItem["VALUES"]["MIN"]["HTML_VALUE"]: $arItem["VALUES"]["MIN"]["VALUE"]?>"
                                                     size="5"
                                                     onkeyup="smartFilter.keyup(this)"
                                             />
@@ -143,7 +143,7 @@ $this->setFrameMode(true);
                                                     id="<?
                                                     echo $arItem["VALUES"]["MAX"]["CONTROL_ID"] ?>"
                                                     value="<?
-                                                    echo $arItem["VALUES"]["MAX"]["HTML_VALUE"] ?>"
+                                                    echo !empty($arItem["VALUES"]["MAX"]["HTML_VALUE"])?$arItem["VALUES"]["MAX"]["HTML_VALUE"]: $arItem["VALUES"]["MAX"]["VALUE"] ?>"
                                                     size="5"
                                                     onkeyup="smartFilter.keyup(this)"
                                             />

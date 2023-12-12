@@ -207,7 +207,7 @@ $inCartProducts = array_column($cart, 'quantity', 'productId');
                                 цена
                                 <div class="product-price"><?=$price?></div>
                             </div>
-
+                            <? if ($arResult['CAN_BUY']): ?>
                             <div class="product-buy-block col-auto col-md-12">
                                 <div class="preloader"></div>
                                 <button id="button-add-to-cart" type="button" class="product-buy btn btn-lg no-in-cart"
@@ -220,7 +220,8 @@ $inCartProducts = array_column($cart, 'quantity', 'productId');
                                     В корзине <span class="in-cart-count"><span></span> шт.</span>
                                 </button>
                             </div>
-                            <script>VZC.cart.checkDetail(<?= $arResult['ID'] ?>)</script>
+                            <script>VZC.cart.checkDetail(<?= $arResult['ID'] ?>)</script>.
+                            <?     endif; ?>
                         </div>
                     </div>
                 </div>

@@ -27,7 +27,7 @@ $this->setFrameMode(true);
         <?
         foreach ($arResult["ITEMS"] as $arElement):
             $arPrice = current($arElement["ITEM_PRICES"]);
-            $price =  $arPrice['PRINT_RATIO_PRICE'];
+            $price = $arPrice['PRINT_RATIO_PRICE'];
             if ($arPrice['BASE_PRICE'] > $arPrice['PRICE']) {
                 $priceOld = $arPrice['PRINT_RATIO_BASE_PRICE'];
             }
@@ -61,7 +61,7 @@ $this->setFrameMode(true);
                     <a href="<?= $arElement["DETAIL_PAGE_URL"] ?>"
                        class="card-product-title"><?= $arElement["NAME"] ?></a>
 
-                    <div class="card-product-brand">Производитель: <?= $arElement['BRAND']['NAME'] ?></div>
+                    <div class="card-product-brand">Производитель: <?= $arElement[ "PROPERTIES"]['CML2_MANUFACTURER']['VALUE'] ?></div>
                     <?
                     /*
                                     <div class="card-product-rating-block d-flex align-items-center">
@@ -78,12 +78,10 @@ $this->setFrameMode(true);
                     <div class="card-product-order-block">
                         <div class="card-product-price-block d-flex flex-wrap align-items-baseline">
 
-                            <div class="card-product-price"><?= $price?></div>
-                            <?
-                            if ($priceOld): ?>
-                                <div class="card-product-old-price"><?=$priceOld?></div>
-                            <?
-                            endif; ?>
+                            <div class="card-product-price"><?= $price ?></div>
+                            <? if ($priceOld): ?>
+                                <div class="card-product-old-price"><?= $priceOld ?></div>
+                            <? endif; ?>
 
                             <?
                             /*<div class="card-product-old-price">2 095 <span><span class="rur">руб</span></span></div>*/ ?>
@@ -105,14 +103,15 @@ $this->setFrameMode(true);
                                                     </button>
                                                 </div>
                                             </div>*/ ?>
-
-                        <button type="button" class="card-product-buy btn" data-toggle="modal"
-                                data-target="#modalAddToCart">
-                            <svg class="card-product-buy-media" width="18" height="18">
-                                <use xlink:href="/images/icons/sprite.svg#icon-shopping-cart"></use>
-                            </svg>
-                            В корзину
-                        </button>
+                        <? if ($arElement['CAN_BUY']): ?>
+                            <button type="button" class="card-product-buy btn" data-toggle="modal"
+                                    data-target="#modalAddToCart">
+                                <svg class="card-product-buy-media" width="18" height="18">
+                                    <use xlink:href="/images/icons/sprite.svg#icon-shopping-cart"></use>
+                                </svg>
+                                В корзину
+                            </button>
+                        <? endif; ?>
                     </div>
 
                     <?
